@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GitHub</string>
+    <string name="name">Name</string>
+    <string name="username">Nutzername</string>
+    <string name="location">:</string>
+    <string name="locations">Lage</string>
+    <string name="company"> :</string>
+    <string name="companies">Unternehmen</string>
+    <string name="tab_followers">Anhänger</string>
+    <string name="tab_following">folgende</string>
+    <string name="tab_repository">Repository</string>
+    <string name="openingGit">Lassen Sie uns finden Sie Ihr Konto Developer hier! </string>
+    <string name="settings">Rahmen</string>
+    <string name="logo">logo</string>
+    <string name="todo">TODO</string>
+    <string name="myfavorite">Mein Favorit </string>
+    <string name="language">Sprache</string>
+    <string name="reminders">Erinnerung</string>
+    <string name="on">Auf</string>
+    <string name="off">Aus</string>
+    <string name="reminder">Find your favorite account now!</string>
+    <string name="repeat_alarm">Alarm wird wiederholt</string>
+    <string name="repeat_alarm_cancel">Wiederholungsalarm ist abgebrochen</string>
+    <string name="type_repeat_alarm">Alarm wiederholen</string>
+    <string name="time">09:00</string>
+    <string name="massage_alarm">Github Erinnerung</string>
+    <string name="favorite_user_widged">Mein Favorite User</string>
+    <string name="no_user_widged">Nein Favorit User</string>
+    <string name="add_widget">Add widget</string>
+    <string name="github_widged">GitHub Widged</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="repository">Repository</string>
+</resources>

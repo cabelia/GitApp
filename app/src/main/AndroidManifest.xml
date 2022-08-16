@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.submission2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.example.submission2.READ_DATABASE" />
+    <uses-permission android:name="com.example.submission2.WRITE_DATABASE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.example.submission2.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.example.submission2.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Submission2"
+        android:usesCleartextTraffic="true"
+        tools:ignore="ExtraText"
+        tools:targetApi="n">
+        <receiver android:name="com.example.submission2.widged.GithubWidged">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/github_widged_info" />
+        </receiver>
+
+        <provider
+            android:name="com.example.submission2.provider.UserContentProvider"
+            android:authorities="com.example.submission2"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.submission2.alarm.SettingsActivity"
+            tools:ignore="Instantiatable" />
+        <activity android:name="com.example.submission2.view.FavoriteActivity"
+            tools:ignore="Instantiatable" />
+        <activity android:name="com.example.submission2.view.DetailUserActivity"
+            tools:ignore="Instantiatable" />
+        <activity android:name="com.example.submission2.view.MainActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="com.example.submission2.view.SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".alarm.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".widged.GitWidgedService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <service
+            android:name=".widged.UpdateWidgedService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+    </application>
+
+</manifest>

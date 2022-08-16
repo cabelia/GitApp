@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GitHub</string>
+    <string name="name">Nama</string>
+    <string name="username">Nama Pengguna</string>
+    <string name="location">:</string>
+    <string name="locations">Lokasi</string>
+    <string name="company"> :</string>
+    <string name="companies">Perusahaan</string>
+    <string name="tab_followers">Pengikut</string>
+    <string name="tab_following">Mengikuti</string>
+    <string name="tab_repository">Repositori</string>
+    <string name="openingGit">Temukan akun pengembang anda di sini! </string>
+    <string name="settings">Pengaturan</string>
+    <string name="logo">logo</string>
+    <string name="todo">TODO</string>
+    <string name="myfavorite">FavoritSaya</string>
+    <string name="language">Bahasa</string>
+    <string name="reminders">Tambah Pengingat</string>
+    <string name="on">Hidup</string>
+    <string name="off">Mati</string>
+    <string name="reminder">Temukan akun favorit anda sekarang!</string>
+    <string name="repeat_alarm">Alarm diulang</string>
+    <string name="repeat_alarm_cancel">Alarm Dimatikan</string>
+    <string name="type_repeat_alarm">Mengulang Alarm</string>
+    <string name="time">09:00</string>
+    <string name="massage_alarm">Pengingat Github</string>
+    <string name="favorite_user_widged">My Favorite User</string>
+    <string name="no_user_widged">Tidak ada akun favorit</string>
+    <string name="add_widget">Tambahkan widget</string>
+    <string name="github_widged">GitHub Widged</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="repository">Repository</string>
+</resources>
